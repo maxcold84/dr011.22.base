@@ -1,0 +1,366 @@
+baseURL = "https://droll.kr/"
+languageCode = "en-us"
+title = "D'roll "
+theme = "hugo-elate-theme"
+
+
+[params]
+  
+  custom_css = ["css/custom1.css", "css/custom2.css"]
+  
+  gl=""
+
+custom_js = ["js/patch.js"]
+
+  # Meta
+  author = "www"
+  description = "d'roll 홈페이지 메일"
+  email = "dir.goodfun@gmail.com"
+
+  # Google Maps Javascript API Key (if not set will default to not passing a key)
+  googleMapsApiKey = ""
+
+  # Navigation
+  [params.navigation]
+    brand = "D'roll"
+    home = "Home"
+    work = "Work"
+    testimonials = "Testimonials"
+    services = "Services"
+    about = "About"
+    contact = "Contact"
+
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+    
+    # prepended links : 상단 추가 버튼
+    # [[menu.prepend]]
+    # url = "http://localhost:1313/a/"
+    # name = "게시판"
+    # weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+     url = "a"
+     name = "Archive"
+     weight = 10
+  
+  # Hero section 타이틀
+  [params.hero]
+    title = ""
+    subtitle = 'DIGITAL ROLL NEW MEDIA ART AGENCY'
+ 
+  # Intro section 아이콘 내용
+  # Available icons: http://simplelineicons.com/
+  [params.intro]
+
+  [[params.intro.item]]
+    title = "Plan"
+    description = "아날로그의 현실공간과 디지털 가상공간을 아우르는 몰입 경험을 선사합니다."
+    url = "/"
+    button = "Get In Touch"
+    icon = "icon-bulb"
+    img = "img_7.jpg"
+
+  [[params.intro.item]]
+    title = "Develop"
+    description = "회화, 영화, 음악, 무용의 전문 뉴미디어아트 현업 작가들이 자유로운 사고로 협업합니다."
+    url = "a"
+    button = "Click Me"
+    icon = "icon-wrench"
+    img = "img_8.jpg"
+
+  [[params.intro.item]]
+    title = "Launch"
+    description = "로보틱스 특수촬영 기술이 적용된 가상스튜디오, 국내 유일 XR아카이빙 영상제작."
+    url = "ar"
+    button = "Why us?"
+    icon = "icon-rocket"
+    img = "img_10.jpg"
+
+# 비디오 효과적으로 수정 필요
+  [params.intro.video]
+    enable = true
+    title = "Watch the video"
+    icon = "icon-play2"
+    url = "https://player.vimeo.com/video/513807846"
+
+# 디롤 커스텀 작동하지 않음
+[params.bus]
+title = "bus"
+
+  # Work section 작업 정리 수정 필요 !!
+  [params.work]
+    enable =  false
+    title = "Work"
+    description = "디롤 뉴미디어아트 에이전시 프로젝트 아카이브"
+    footertext = ' 2017-2021  '
+
+    [[params.work.row]]
+      img = "https://player.vimeo.com/video/513807846"
+      alt = "디롤"
+      title = "Project 1"
+      subtitle = "Branding"
+
+   # [[params.work.row]]
+   #  img = "work_2.jpg"
+    #  alt = "Image2"
+     # title = "Project 2"
+      #subtitle = "Design"
+
+   # [[params.work.row]]
+      #img = "work_3.jpg"
+      #alt = "Image3"
+      #title = "Project 3"
+      #subtitle = "Design"
+
+  #  [[params.work.row]]
+      #img = "work_4.jpg"
+      #alt = "Image4"
+      #title = "Project 4"
+      #subtitle = "Design"
+
+   # [[params.work.row]]
+      #img = "work_5.jpg"
+      #alt = "Image5"
+      #title = "Project 5"
+      #subtitle = "Design"
+
+    [[params.work.row]]
+      img = "work_6.jpg"
+      alt = "Image6"
+      title = "Project 6"
+      subtitle = "Design"
+
+
+
+
+  # Testimonials section
+  [params.testimonials]
+    enable = false
+    title = "Testimonials"
+    description = ""
+
+    [[params.testimonials.item]]
+      quote = "&ldquo; 디롤의 작가들은 꿈을 실현한다. 짧은 시간에 생각지도 못한 만족스러운 결과를 얻을 수 있었다. &rdquo;"
+      person = '김덕수, CEO'
+      img = "person1.jpg"
+      alt = "Person1"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;반짝이는 통찰 덕분에 디자인팀은 중요한 의사결정을 해야 할 때 디롤과의 협업을 다시 생각하게 된다. &rdquo;"
+      person = '민찬혁, Senior UI'
+      img = "person2.jpg"
+      alt = "Person2"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo; 점점 더 세분화하는 세상에서 디롤이 만들어내는 프로젝트들의 교훈은 그 어느 때보다도 중요하다. &rdquo;"
+      person = '정해성, Director'
+      img = "person3.jpg"
+      alt = "Person3"
+    
+
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    description = "활발하게 활동중인 미디어아트 작가들과 함께 상상하던 새로운 브랜드 전략을 실현해보세요. 전문화된 작가들의 숙련도와 집념으로 완성도 높은 경험을 약속드립니다."
+
+    [[params.services.item]]
+      title = "Brand &amp; Strategy"
+      description = "신선하고 효과적인 브랜드 전략과 뉴테크놀로지를 선도하는 새로운 경험을 실현합니다."
+      icon = "icon-anchor"
+
+    [[params.services.item]]
+      title = "Web &amp; Interface"
+      description = "web art, interactive art, digital art, computer art, electronic art, network art, video art, sound art, space art, hybrid art 의 차별화된 기발하고 유연한 개발 경험을 가지고 있습니다."
+      icon = "icon-layers2"
+    [[params.services.item]]
+      title = "Photo &amp; Video"
+      description = "15년 경력의 현업 광고 크루의 스튜디오 시스템과 뉴미디어 인터랙티브 작업을 유연하게 선사합니다."
+      icon = "icon-video2"
+
+      [[params.services.item]]
+      title = "CMS &amp; eCommerce"
+      description = "빅데이터와 블록체인 기술의 현실적이고 안정적인 전자 상거래를 실현합니다."      
+      icon = "icon-monitor"
+
+  # About section
+  [params.about]
+    enable =  false
+    title = "About"
+    description = "D'roll은 뉴미디어아티스트들이 창조적인 경험을 나누는 문화에서 시작되었습니다. 2007년부터 오랫동안 함께 활동해온 팀워크와 체계적인 시스템은 그동안 모든 프로젝트를 성공적으로 이끌었습니다. "
+    [[params.about.item]]
+      name = "한승훈"
+      position = "뉴미디어 아티스트"
+      description = ""
+      img = "person1.jpg"
+      alt = "Person1"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-linkedin", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "조영재"
+      position = "뉴미디어 아티스트"
+      description = " "
+      img = "person2.jpg"
+      alt = "Person2"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-github", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "박영훈"
+      position = "뉴미디어 아티스트"
+      description = " "
+      img = "person3.jpg"
+      alt = "Person3"
+      social = [
+        ["icon-twitter", "#"],
+        ["icon-facebook", "#"],
+        ["icon-dribbble", "#"]
+      ]      
+
+  # Counters section
+  [params.counters]
+    enable = false
+    title = "Stats"
+    background = "full_image_1.jpg"
+
+    [[params.counters.item]]
+      description = "Finished projects"
+      icon = "icon-briefcase"
+      from = 0
+      to = 89
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Lines of code"
+      icon = "icon-code"
+      from = 0
+      to = 2343409
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Cups of coffee"
+      icon = "icon-cup"
+      from = 0
+      to = 1302
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Happy clients"
+      icon = "icon-people"
+      from = 0
+      to = 52
+      interval = 50
+      speed = 5000
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    form = true
+    title = "연락하기"
+    description = "D'roll은 뉴미디어 아티스트들의 끝을 모르는 도전과 호기심으로 상상하던 꿈들을 실현하고 있습니다. D'roll과 함께 확실한 미래를 만나세요."
+    
+    # Available icons: http://simplelineicons.com/
+    details = [
+        ["icon-home", "서울시 중구 다산로 22길 63, <br> 201"],
+        ["icon-phone", "010-3879-1435"],
+        ["icon-envelope", "dir.goodfun@gmail.com"],
+        ["icon-globe", '<a href="http://droll.kr/" target="_blank">droll.kr</a>']
+      ]
+
+    name = "Name"
+    email = "Email"
+    phone = "Phone"
+    message = "Message"
+    button = "Send message"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = 'Copyright ⓒ 2022 D’roll. All Rights Reserved.'
+    links = [
+       # ["icon-twitter", "#twitter"],
+       # ["icon-facebook", "#facebook"],
+       # ["icon-youtube", "#youtube"]
+      ]
+
+# 마크다운 정리
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+[markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

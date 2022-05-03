@@ -1,0 +1,37 @@
+
+
+<section id="fh5co-home" data-section="home"style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.3">
+		<div class="gradient">
+			<!-- 효과 넣기 가능 단, 색적용 안됨.   -->
+		
+	 
+</div>
+
+<div class= "bus">
+<!-- 커스텀 효과 적용  -->
+{{ partialCached "book/bus.html" .}}
+</div>
+
+		<div class="container">
+
+			<!-- 효과 넣기
+				
+			<iframe  frameborder="0" style=" position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; " src="https://sandbox.cables.gl/viewer/5c5cefda88d5bc526dca7749"></iframe>
+			 -->
+			 </div>
+
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
+							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slant"></div>
+	</section>
+
+	
